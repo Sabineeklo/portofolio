@@ -1,0 +1,20 @@
+// H3 and Text fonts
+@mixin fonts($font-weight, $font-size) {
+  font-family: "Oxygen", sans-serif;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+// H1 fonts
+@mixin header1-fonts {
+  font-family: "Quintessential", cursive;
+  font-size: 7rem;
+}
+
+//FLEX display
+@mixin flex($justify, $align, $direction) {
+  align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}

@@ -1,0 +1,304 @@
+@import "variables";
+@import "globals";
+@import "mixins";
+
+// ------------------  BASE PART start  ----------------//
+
+// Header section
+header {
+  color: $text-color;
+  background-image: url("../images/homepage-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#logo {
+  font-family: "Sacramento", cursive;
+  font-size: 2.6rem;
+}
+.cv-btn {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+// Nav section
+
+nav a {
+  @include fonts(300, 3rem);
+}
+
+// ABOUT Section
+.about-me-text {
+  h3 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2.8rem;
+  }
+}
+
+// PROJECTS Section
+
+#projects {
+  h2 {
+    text-decoration: underline;
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 2.5rem;
+  }
+}
+
+// CONTACT section
+#contact-me h5 {
+  @include fonts(300, 2.9rem);
+  line-height: 1.5;
+}
+
+.contact-icons img {
+  width: 60px;
+  height: 60px;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+input,
+textarea {
+  @include fonts(300, 2.2rem);
+  background-color: #eeedee;
+  color: $button-color;
+  border-radius: 12px;
+}
+input::placeholder {
+  color: $button-color;
+}
+
+// ------------------  BASE PART end  ----------------//
+
+// ------------------  LAYOUT PART start  ----------------//
+
+// Nav section
+
+nav {
+  @include flex(space-between, center, row);
+  flex-wrap: wrap;
+  margin: auto;
+  min-height: 10vh;
+  padding: 2.3rem;
+  width: 95%;
+
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 60rem;
+  }
+}
+#logo {
+  @include flex(flex-start, center, row);
+  flex: 1 1 20rem;
+}
+
+.intro {
+  align-items: center;
+  border-top: 1rem solid $button-color;
+  border-bottom: 1rem solid $button-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 3rem 5rem;
+  text-align: center;
+  width: 75%;
+
+  h1 {
+    padding: 2rem 1rem 3rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+    padding: 0rem 5% 4rem;
+  }
+}
+
+.intro-buttons {
+  padding: 1rem;
+
+  button {
+    margin: 0rem 8rem;
+  }
+}
+
+// ABOUT Section
+#about-me {
+  @include flex(space-between, center, row);
+  flex-wrap: wrap;
+}
+
+.about-me-image img {
+  flex: 1 1 50rem;
+  padding-left: 25%;
+  width: 90%;
+}
+
+.about-me-text {
+  flex: 1 1 50rem;
+  padding-right: 5rem;
+  h3 {
+    padding: 1rem 10%;
+  }
+  p {
+    line-height: 1.5;
+    text-align: justify;
+    padding-top: 6rem;
+  }
+}
+
+// PROJECTS Section
+
+#projects {
+  h2 {
+    padding-bottom: 5rem;
+  }
+
+  h4 {
+    padding-bottom: 2rem;
+  }
+
+  img {
+    position: relative;
+    left: 25rem;
+    width: 60%;
+  }
+}
+
+.project-descrption {
+  p {
+    line-height: 1.5;
+    text-align: justify;
+    padding-right: 7rem;
+  }
+}
+
+.project2 {
+  padding-top: 5rem;
+}
+
+// CONTACT section
+
+#contact-me {
+  padding-bottom: 0px;
+  h5 {
+    padding-bottom: 4rem;
+  }
+}
+
+.contact-icons img {
+  background-clip: content-box;
+}
+.contact-icons li {
+  float: left;
+  padding: 2rem;
+}
+
+footer {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer p {
+  flex: 3 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  flex: 1 1 30rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// ------------------  LAYOUT PART end  ----------------//
+
+// ------------------  MODULES PART start  ----------------//
+
+// ------------------  MODULES PART end  ----------------//
+
+// ------------------  STATE PART start  ----------------//
+nav a:hover,
+.active {
+  background-color: $button-color;
+  border: 5px solid $button-color;
+  border-radius: 15px;
+  color: white;
+  padding: 0.2rem 1.4rem;
+}
+
+#projects img:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+// ------------------  STATE PART end  ----------------//
+// MEDIA QUERIES
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+
+  section {
+    padding: 8rem;
+  }
+
+  .about-me-image img {
+    width: 80%;
+    padding: 0rem;
+  }
+  .about-me-image,
+  .about-me-text p,
+  .about-me-text h1,
+  .about-me-text h3 {
+    text-align: center;
+  }
+  #projects img {
+    left: auto;
+  }
+  #projects .row,
+  #projects p {
+    text-align: center;
+  }
+  .project2 {
+    padding-top: 8rem;
+  }
+  .form-wrapper {
+    text-align: center;
+    padding-top: 8rem;
+  }
+  #contact-me h5 {
+    padding-bottom: 0rem;
+  }
+}
+
+// @media screen and (max-width: 700px) {
+//   html {
+//     font-size: 30%;
+//   }
+//   // nav {
+//   //   #logo {
+//   //     @include flex(center, center, column);
+//   //     flex: 1 1 20rem;
+//   //     margin-top: 2rem;
+//   //   }
+//   //   ul {
+//   //     flex: 1 1 60rem;
+//   //     margin: 2rem 0rem;
+//   //   }
+//   // }
+// }

@@ -1,0 +1,426 @@
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+p {
+  font-family: "Oxygen", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+button {
+  font-family: "Oxygen", sans-serif;
+  font-size: 2.9rem;
+  font-weight: 500;
+  background-color: #e05a47;
+  border: 5px solid #e05a47;
+  border-radius: 15px;
+  padding: 0.2rem 1.4rem;
+}
+
+input {
+  border: none;
+  padding: 1rem;
+  margin: 4px;
+}
+
+h1 {
+  font-family: "Quintessential", cursive;
+  font-size: 7rem;
+}
+
+h2 {
+  font-family: "Oxygen", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  font-style: oblique;
+}
+
+h3,
+h4 {
+  font-family: "Oxygen", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+section {
+  background-color: #ab7254;
+  min-height: 100vh;
+  padding: 6rem;
+}
+
+header {
+  color: white;
+  background-image: url("../images/homepage-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#logo {
+  font-family: "Sacramento", cursive;
+  font-size: 2.6rem;
+}
+
+.cv-btn {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+nav a {
+  font-family: "Oxygen", sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.about-me-text h3 {
+  font-size: 4rem;
+}
+
+.about-me-text p {
+  font-size: 2.8rem;
+}
+
+#projects h2 {
+  text-decoration: underline;
+}
+
+#projects h4 {
+  font-weight: bold;
+}
+
+#projects p {
+  font-size: 2.5rem;
+}
+
+#contact-me h5 {
+  font-family: "Oxygen", sans-serif;
+  font-size: 2.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.contact-icons img {
+  width: 60px;
+  height: 60px;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+input,
+textarea {
+  font-family: "Oxygen", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  background-color: #eeedee;
+  color: #e05a47;
+  border-radius: 12px;
+}
+
+input::-webkit-input-placeholder {
+  color: #e05a47;
+}
+
+input:-ms-input-placeholder {
+  color: #e05a47;
+}
+
+input::-ms-input-placeholder {
+  color: #e05a47;
+}
+
+input::placeholder {
+  color: #e05a47;
+}
+
+nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  min-height: 10vh;
+  padding: 2.3rem;
+  width: 95%;
+}
+
+nav ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60rem;
+          flex: 1 1 60rem;
+}
+
+#logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+.intro {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1rem solid #e05a47;
+  border-bottom: 1rem solid #e05a47;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: 3rem 5rem;
+  text-align: center;
+  width: 75%;
+}
+
+.intro h1 {
+  padding: 2rem 1rem 3rem;
+}
+
+.intro h3 {
+  font-size: 4rem;
+  padding: 0rem 5% 4rem;
+}
+
+.intro-buttons {
+  padding: 1rem;
+}
+
+.intro-buttons button {
+  margin: 0rem 8rem;
+}
+
+#about-me {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-me-image img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
+  padding-left: 25%;
+  width: 90%;
+}
+
+.about-me-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
+  padding-right: 5rem;
+}
+
+.about-me-text h3 {
+  padding: 1rem 10%;
+}
+
+.about-me-text p {
+  line-height: 1.5;
+  text-align: justify;
+  padding-top: 6rem;
+}
+
+#projects h2 {
+  padding-bottom: 5rem;
+}
+
+#projects h4 {
+  padding-bottom: 2rem;
+}
+
+#projects img {
+  position: relative;
+  left: 25rem;
+  width: 60%;
+}
+
+.project-descrption p {
+  line-height: 1.5;
+  text-align: justify;
+  padding-right: 7rem;
+}
+
+.project2 {
+  padding-top: 5rem;
+}
+
+#contact-me {
+  padding-bottom: 0px;
+}
+
+#contact-me h5 {
+  padding-bottom: 4rem;
+}
+
+.contact-icons img {
+  background-clip: content-box;
+}
+
+.contact-icons li {
+  float: left;
+  padding: 2rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer p {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 40rem;
+          flex: 3 1 40rem;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a:hover,
+.active {
+  background-color: #e05a47;
+  border: 5px solid #e05a47;
+  border-radius: 15px;
+  color: white;
+  padding: 0.2rem 1.4rem;
+}
+
+#projects img:hover {
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+  section {
+    padding: 8rem;
+  }
+  .about-me-image img {
+    width: 80%;
+    padding: 0rem;
+  }
+  .about-me-image,
+  .about-me-text p,
+  .about-me-text h1,
+  .about-me-text h3 {
+    text-align: center;
+  }
+  #projects img {
+    left: auto;
+  }
+  #projects .row,
+  #projects p {
+    text-align: center;
+  }
+  .project2 {
+    padding-top: 8rem;
+  }
+  .form-wrapper {
+    text-align: center;
+    padding-top: 8rem;
+  }
+  #contact-me h5 {
+    padding-bottom: 0rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
