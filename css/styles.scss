@@ -10,6 +10,7 @@ header {
   background-image: url("../images/homepage-image.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-height: 100vh;
 }
 
@@ -117,12 +118,12 @@ nav {
   width: 75%;
 
   h1 {
-    padding: 2rem 1rem 3rem;
+    padding: 3rem;
   }
 
   h3 {
     font-size: 4rem;
-    padding: 0rem 5% 4rem;
+    padding: 1rem 8rem 4rem;
   }
 }
 
@@ -173,7 +174,7 @@ nav {
   img {
     position: relative;
     left: 25rem;
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -242,7 +243,7 @@ nav a:hover,
 }
 
 #projects img:hover {
-  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
 }
 
 // ------------------  STATE PART end  ----------------//
@@ -252,14 +253,51 @@ nav a:hover,
   html {
     font-size: 40%;
   }
+  h1 {
+    font-size: 4rem;
+  }
 
   section {
-    padding: 8rem;
+    padding: 5rem;
+  }
+
+  nav {
+    #logo {
+      @include flex(center, center, column);
+      flex: 1 1 20rem;
+      margin-top: 1rem;
+    }
+    ul {
+      flex: 1 1 80rem;
+      margin: 1rem 0rem;
+    }
+    a {
+      font-size: 2.2rem;
+    }
+  }
+
+  .intro {
+    padding: 4rem;
+    width: 90%;
+
+    h3 {
+      font-size: 3rem;
+      padding: 1rem;
+    }
+  }
+
+  .about-me-text {
+    padding: 0rem;
+
+    h3 {
+      font-size: 3rem;
+      padding: 0rem;
+    }
   }
 
   .about-me-image img {
-    width: 80%;
     padding: 0rem;
+    width: 80%;
   }
   .about-me-image,
   .about-me-text p,
@@ -267,9 +305,15 @@ nav a:hover,
   .about-me-text h3 {
     text-align: center;
   }
-  #projects img {
-    left: auto;
+  #projects {
+    img {
+      left: auto;
+    }
+    .row p {
+      padding-right: 0rem;
+    }
   }
+
   #projects .row,
   #projects p {
     text-align: center;
@@ -278,11 +322,21 @@ nav a:hover,
     padding-top: 8rem;
   }
   .form-wrapper {
-    text-align: center;
     padding-top: 8rem;
+    text-align: center;
   }
   #contact-me h5 {
     padding-bottom: 0rem;
+  }
+  footer {
+    ul {
+      order: 1;
+    }
+    p {
+      font-size: 1.8rem;
+      order: 2;
+      text-align: center;
+    }
   }
 }
 

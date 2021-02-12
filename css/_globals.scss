@@ -34,6 +34,15 @@ button {
   border: 5px solid $button-color;
   border-radius: 15px;
   padding: 0.2rem 1.4rem;
+
+  &:focus {
+    background-color: $button-color;
+    outline: none;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 input {

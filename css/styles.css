@@ -41,6 +41,16 @@ button {
   padding: 0.2rem 1.4rem;
 }
 
+button:focus {
+  background-color: #e05a47;
+  outline: none;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 input {
   border: none;
   padding: 1rem;
@@ -77,6 +87,7 @@ header {
   background-image: url("../images/homepage-image.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-height: 100vh;
 }
 
@@ -240,12 +251,12 @@ nav ul {
 }
 
 .intro h1 {
-  padding: 2rem 1rem 3rem;
+  padding: 3rem;
 }
 
 .intro h3 {
   font-size: 4rem;
-  padding: 0rem 5% 4rem;
+  padding: 1rem 8rem 4rem;
 }
 
 .intro-buttons {
@@ -310,7 +321,7 @@ nav ul {
 #projects img {
   position: relative;
   left: 25rem;
-  width: 60%;
+  width: 50%;
 }
 
 .project-descrption p {
@@ -385,19 +396,66 @@ nav a:hover,
 }
 
 #projects img:hover {
-  background-color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
   html {
     font-size: 40%;
   }
+  h1 {
+    font-size: 4rem;
+  }
   section {
-    padding: 8rem;
+    padding: 5rem;
+  }
+  nav #logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+    margin-top: 1rem;
+  }
+  nav ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 80rem;
+            flex: 1 1 80rem;
+    margin: 1rem 0rem;
+  }
+  nav a {
+    font-size: 2.2rem;
+  }
+  .intro {
+    padding: 4rem;
+    width: 90%;
+  }
+  .intro h3 {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+  .about-me-text {
+    padding: 0rem;
+  }
+  .about-me-text h3 {
+    font-size: 3rem;
+    padding: 0rem;
   }
   .about-me-image img {
-    width: 80%;
     padding: 0rem;
+    width: 80%;
   }
   .about-me-image,
   .about-me-text p,
@@ -408,6 +466,9 @@ nav a:hover,
   #projects img {
     left: auto;
   }
+  #projects .row p {
+    padding-right: 0rem;
+  }
   #projects .row,
   #projects p {
     text-align: center;
@@ -416,11 +477,23 @@ nav a:hover,
     padding-top: 8rem;
   }
   .form-wrapper {
-    text-align: center;
     padding-top: 8rem;
+    text-align: center;
   }
   #contact-me h5 {
     padding-bottom: 0rem;
+  }
+  footer ul {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer p {
+    font-size: 1.8rem;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
